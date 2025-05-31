@@ -5,4 +5,4 @@ Deno.serve(
   { hostname: HOSTNAME, port: Number.parseInt(PORT) },
   handler,
 );
-console.log(`Password: ${PASSWORD}`);
+if (PASSWORD) console.log(`Password: ${PASSWORD}`);

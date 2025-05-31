@@ -19,7 +19,7 @@ export class ProxyManager {
   private static socket: WebSocket | null = null;
   private static textEncoder = new TextEncoder();
 
-  // The core of the new design: A simple Map to track requests by their UUID.
+  // A simple Map to track requests by their UUID.
   private static pendingRequests = new Map<string, PendingRequest>();
 
   /**
