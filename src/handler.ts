@@ -1,7 +1,7 @@
 import { PASSWORD } from "./env.ts";
 import { ProxyManager } from "./proxy.ts";
 
-const PROXY_UPGRADE_PATH = "/__proxy_ws";
+const PROXY_UPGRADE_PATH = "/__ws_proxy";
 
 export const handler: Deno.ServeHandler = async (
   req: Request,
