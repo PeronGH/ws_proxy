@@ -118,7 +118,7 @@ export class ProxyManager {
           // Clean up and reject if the client doesn't send headers in time.
           this.pendingRequests.delete(uuid);
           reject(new Error("Proxy request timed out waiting for headers."));
-        }, 300e3); // 5 minutes timeout
+        }, 900e3); // 15 minutes timeout
 
         responseStream = new ReadableStream({
           start: (controller) => {
